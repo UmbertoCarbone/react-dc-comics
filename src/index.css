@@ -40,10 +40,11 @@
 }
 
 .divlitghgrey {
+  z-index: 50;
+  position: absolute;
   width: 100vw;
-  min-height: 170px;
-  background: darkgrey
-  
+  min-height: 150px;
+  background: #303030
 }
 
 .divlightblue img {
@@ -63,13 +64,13 @@
 }
 
 .footer-bg {
+  position: relative;
   background-image: url("/img/footer-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
-  min-height: 700px;
- 
+  min-height: 550px;
 }
 .footer-title {
   font-size: 1.1rem;
@@ -77,8 +78,8 @@
 
 .footer-top-img {
   display: block;
-  margin: 0 auto;      /* centra l'immagine */
-  max-width: 200px;    /* imposta la larghezza massima, cambia a piacere */
+  margin: 0 auto; /* centra l'immagine */
+  max-width: 200px; /* imposta la larghezza massima, cambia a piacere */
   margin-bottom: 24px; /* spazio sotto la foto */
 }
 
@@ -87,3 +88,11 @@ a {
   color: white;
 }
 
+.footerlogoimg {
+  position: absolute;
+  top: -37px;
+  right: 77px;
+  max-width: 619px;
+  width: 100%;
+  z-index: 10;
+}
