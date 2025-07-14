@@ -8,48 +8,82 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
-
+/* .navbar {
+  display: flex;
+  align-items: center;
+  gap: 16px
+} */
 .navbar a {
   border: none;
   outline: none;
   text-decoration: none;
   color: black;
   display: flex;
-  align-items: flex-end;
 }
 
 .divblack {
   width: 100vw;
-  min-height: 170px; 
-  background: #1c1c1c; 
-  color: white;  
+  min-height: 170px;
+  background: #1c1c1c;
+  color: white;
   display: flex;
-  justify-content: center; 
-  align-items: center;     
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 .divlightblue {
   width: 100vw;
-  min-height: 170px; 
-  background: #0282f9; 
+  min-height: 170px;
+  background: #0282f9;
   gap: 4rem;
+}
+
+.divlitghgrey {
+  width: 100vw;
+  min-height: 170px;
+  background: darkgrey
+  
 }
 
 .divlightblue img {
   width: 80px;
   height: 80px;
   object-fit: contain;
- 
 }
 
 .divlightblue a {
   text-decoration: none;
-  color:white
-  
+  color: white;
 }
 
 .divlightblue a img {
   margin-right: 8px;
   vertical-align: middle;
 }
+
+.footer-bg {
+  background-image: url("/img/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 700px;
+ 
+}
+.footer-title {
+  font-size: 1.1rem;
+}
+
+.footer-top-img {
+  display: block;
+  margin: 0 auto;      /* centra l'immagine */
+  max-width: 200px;    /* imposta la larghezza massima, cambia a piacere */
+  margin-bottom: 24px; /* spazio sotto la foto */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+

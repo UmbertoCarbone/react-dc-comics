@@ -9,6 +9,7 @@ import foto5 from "/img/buy-dc-power-visa.svg"
 export default function Main() {
     return (
         <main>
+            
             <div className="divblack"><h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum saepe, neque dolore ex architecto nobis.</h1></div>
             <div className="divlightblue d-flex justify-content-center align-items-center">
                 <a href="#"><img src={foto1} alt="Digital Comics" />DIGITAL COMICS</a>
