@@ -8,11 +8,8 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
-/* .navbar {
-  display: flex;
-  align-items: center;
-  gap: 16px
-} */
+
+/* Navbar */
 .navbar a {
   border: none;
   outline: none;
@@ -21,6 +18,7 @@
   display: flex;
 }
 
+/* Black Header Section */
 .divblack {
   width: 100vw;
   min-height: 170px;
@@ -32,19 +30,23 @@
   text-align: center;
 }
 
+/* Blue Menu Section */
 .divlightblue {
   width: 100vw;
   min-height: 170px;
   background: #0282f9;
   gap: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
 }
 
-.divlitghgrey {
-  z-index: 50;
-  position: absolute;
-  width: 100vw;
-  min-height: 150px;
-  background: #303030
+.divlightblue a {
+  text-decoration: none;
+  color: white;
+  flex: 1 1 120px;
+  text-align: center;
 }
 
 .divlightblue img {
@@ -53,16 +55,12 @@
   object-fit: contain;
 }
 
-.divlightblue a {
-  text-decoration: none;
-  color: white;
-}
-
 .divlightblue a img {
   margin-right: 8px;
   vertical-align: middle;
 }
 
+/* Footer Background */
 .footer-bg {
   position: relative;
   background-image: url("/img/footer-bg.jpg");
@@ -71,28 +69,95 @@
   background-repeat: no-repeat;
   width: 100vw;
   min-height: 550px;
+  overflow: hidden;
+  padding-bottom: 150px;
 }
+
 .footer-title {
   font-size: 1.1rem;
 }
 
 .footer-top-img {
   display: block;
-  margin: 0 auto; /* centra l'immagine */
-  max-width: 200px; /* imposta la larghezza massima, cambia a piacere */
-  margin-bottom: 24px; /* spazio sotto la foto */
+  margin: 0 auto;
+  max-width: 200px;
+  margin-bottom: 24px;
 }
 
+/* Footer Links */
 a {
   text-decoration: none;
   color: white;
 }
 
+/* DC Logo in Footer */
 .footerlogoimg {
   position: absolute;
-  top: -37px;
-  right: 77px;
-  max-width: 619px;
-  width: 100%;
-  z-index: 10;
+  bottom: 0;
+  right: 0;
+  max-width: 400px;
+  height: auto;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+/* Grey Bottom Section */
+.divlitghgrey {
+  z-index: 50;
+  position: relative;
+  width: 100vw;
+  min-height: 150px;
+  background: #303030;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.divlitghgrey .d-flex {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .divblack,
+  .divlightblue {
+    min-height: auto;
+    padding: 1rem 0;
+  }
+
+  .divlightblue {
+    gap: 1rem;
+  }
+
+  .footer-bg {
+    background-position: top center;
+    padding-bottom: 100px;
+  }
+
+  .footerlogoimg {
+    max-width: 250px;
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-title {
+    font-size: 1rem;
+  }
+
+  .divlitghgrey {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .divlitghgrey button {
+    width: 100%;
+  }
+
+  .divlightblue a {
+    flex: 1 1 100px;
+  }
 }

@@ -10,10 +10,10 @@ export default function Footer() {
         <>
             <footer className="footer-bg text-white pt-4">
 
-                <div className="container">
+                <div className="container-fluid">
                     <div className="row">
                         {/* Prima colonna: 2 ul */}
-                        <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div className="col-12 col-md-6 col-lg-4 col-xl-3">
                             <ul className="list-unstyled fs-3 mb-4">
                                 <li className="footer-title fw-bold fs-4 mb-2">DC COMICS</li>
                                 <li><a href="#">Characters</a></li>
@@ -31,7 +31,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         {/* Seconda colonna: 1 ul */}
-                        <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div className="col-12 col-md-6 col-lg-4 col-xl-3">
                             <ul className="list-unstyled fs-3 mb-4">
                                 <li className="footer-title fw-bold fs-4 mb-2">DC</li>
                                 <li><a href="#">Terms Of Use</a></li>
@@ -48,7 +48,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         {/* Terza colonna: 1 ul */}
-                        <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div className="col-12 col-md-6 col-lg-4 col-xl-3">
                             <ul className="list-unstyled fs-3 mb-4">
                                 <li className="footer-title fw-bold mb-2">SITES</li>
                                 <li><a href="#">DC</a></li>
