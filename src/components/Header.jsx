@@ -73,7 +73,7 @@ export default function Header() {
                 {
                     menu.map((item) => {
                         return (
-                            <a classname="" href="#">{item.title}</a>
+                            <a key={`link-header-${item.id}`} href="#">{item.title}</a>
                         )
                     })
                 }

@@ -1,4 +1,4 @@
-import comics from "../../comics";
+import comics from "../comics";
 
 import foto1 from '/img/buy-comics-digital-comics.png';
 import foto2 from "/img/buy-comics-merchandise.png"
