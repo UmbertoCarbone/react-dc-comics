@@ -21,7 +21,7 @@
 /* Black Header Section */
 .divblack {
   width: 100vw;
-  min-height: 170px;
+
   background: #1c1c1c;
   color: white;
   display: flex;
@@ -60,7 +60,15 @@
   vertical-align: middle;
 }
 
-/* Footer Background */
+.jumbotron img {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 550px;
+  overflow: hidden;
+}
 .footer-bg {
   position: relative;
   background-image: url("/img/footer-bg.jpg");
@@ -77,13 +85,23 @@
   font-size: 1.1rem;
 }
 
-.footer-top-img {
+img.img {
+  width: 300px;
+  max-width: 100%;
+  
+  aspect-ratio: 2/3; /* Mantiene proporzione verticale */
+  object-fit: cover; /* Ritaglia l'immagine se necessario */
   display: block;
-  margin: 0 auto;
-  max-width: 200px;
-  margin-bottom: 24px;
+  
 }
 
+.img-large {
+  width: 220px; /* o la dimensione che preferisci */
+  height: 320px; /* o la dimensione che preferisci */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
 /* Footer Links */
 a {
   text-decoration: none;
