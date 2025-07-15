@@ -1,9 +1,15 @@
-import FB from "/img/footer-facebook.png";
-import TW from "/img/footer-twitter.png";
-import YT from "/img/footer-youtube.png";
-import PINT from "/img/footer-pinterest.png";
-import PS from "/img/footer-periscope.png";
-import LOGO from "/img/dc-logo-bg.png";
+ 
+import LOGO from "/img/dc-logo-bg.png"; 
+const linkBio = [
+    { id: 1, title: "DC", href: "#", img: "/img/footer-facebook.png" },
+    { id: 2, title: "MAD Magazine", href: "#", img:"/img/footer-twitter.png" },
+    { id: 3, title: "DC Kids", href: "#", img:"/img/footer-youtube.png"},
+    { id: 4, title: "DCUniverse", href: "#", img:"/img/footer-pinterest.png" },
+    { id: 5, title: "DC Power Visa", href: "#", img:"/img/footer-periscope.png" },
+];
+
+
+
 
 const dcComicsLinks = [
     { id: 1, title: "Characters", href: "#" },
@@ -100,12 +106,12 @@ export default function Footer() {
                         SIGN-UP NOW!
                     </button>
                     <div className="d-flex align-items-center gap-3">
-                        <span className="me-2 fs-4 text-primary fw-bold">FOLLOW US</span>
-                        <a href="#"><img src={FB} alt="Facebook" /></a>
-                        <a href="#"><img src={TW} alt="Twitter" /></a>
-                        <a href="#"><img src={YT} alt="YouTube" /></a>
-                        <a href="#"><img src={PINT} alt="Pinterest" /></a>
-                        <a href="#"><img src={PS} alt="Periscope" /></a>
+                        {linkBio.map(item => (
+                            <a href="#" key={item.id}>
+                                <img src={item.img} alt="profile" />
+
+                            </a>
+                        ))}
                     </div>
                 </div>
             </footer>
