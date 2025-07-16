@@ -1,6 +1,6 @@
 import jumbotron from "/img/jumbotron.jpg";
 import ComicCard from "./ComicCard";
-import linkHeader from "./linkHeader"
+import LinkHeader from "./LinkHeader"
 
 export default function Main({ comics, linkHeader }) {
     return (
@@ -22,7 +22,7 @@ export default function Main({ comics, linkHeader }) {
             <div className="divlightblue d-flex justify-content-center align-items-center">
                 {linkHeader.map((item) => (
                     <div key={item.id}>
-                        <linkHeader img={item.img} title={item.title} />
+                        <LinkHeader img={item.img} title={item.title} />
                     </div>
                 ))}
             </div>

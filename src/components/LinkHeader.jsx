@@ -1,8 +1,8 @@
-export default function linkHeader({ img, title }) {
+export default function LinkHeader({ img, title }) {
     return (
         <div className="">
-            <img src={img} className="img" alt={title} />
-            <p className="text-center">{title}</p>
+            <img src={img} className="img.img" alt={title} />
+            <p className="">{title}</p>
         </div>
     );
 }
