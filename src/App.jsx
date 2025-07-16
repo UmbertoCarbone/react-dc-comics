@@ -8,7 +8,7 @@ import Main from "./components/Main"
 import Footer from './components/Footer'
 import comics from "./assets/ComicCardHeader";
 import navbar from './assets/navbarHeader';
-import linkHeader from './assets/linkHeader';
+import linkHeader from './assets/link';
 
 function App() {
 

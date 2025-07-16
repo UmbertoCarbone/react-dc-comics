@@ -1,4 +1,4 @@
-const LinkHeader = [
+const linkHeader = [
     {
         id: 1,
         title: "Digital Comics",
@@ -26,4 +26,4 @@ const LinkHeader = [
     }
 ];
 
-export default LinkHeader
+export default linkHeader;

@@ -1,8 +1,8 @@
 export default function LinkHeader({ img, title }) {
     return (
-        <div className="">
+        <div>
             <img src={img} className="img.img" alt={title} />
-            <p className="">{title}</p>
+            <p>{title}</p>
         </div>
     );
 }

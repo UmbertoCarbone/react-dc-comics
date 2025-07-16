@@ -1,6 +1,6 @@
 import jumbotron from "/img/jumbotron.jpg";
 import ComicCard from "./ComicCard";
-import LinkHeader from "./LinkHeader"
+import LinkHeader from "./linkHeader";
 
 export default function Main({ comics, linkHeader }) {
     return (
@@ -29,6 +29,5 @@ export default function Main({ comics, linkHeader }) {
         </main>
     );
 }
-
 
 
