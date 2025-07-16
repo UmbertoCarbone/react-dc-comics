@@ -1,4 +1,4 @@
-import comics from "../comics";
+
 
 import foto1 from '/img/buy-comics-digital-comics.png';
 import foto2 from "/img/buy-comics-merchandise.png"
@@ -36,7 +36,7 @@ const list = [
         img: foto5
     }
 ];
-export default function Main() {
+export default function Main({comics}) {
     return (
 
         <main>
@@ -49,6 +49,7 @@ export default function Main() {
                         {comics.map((comic) => (
                             <div className="col-12 col-sm-4 col-lg-2" key={comic.id}>
                                 <ComicCard thumb={comic.thumb} title={comic.title} />
+                                
                             </div>
                         ))}
                     </div>
@@ -61,12 +62,12 @@ export default function Main() {
                         {item.title}
                     </div>
                 ))}
-
             </div>
         </main>
 
     )
 }
+
 
 
 

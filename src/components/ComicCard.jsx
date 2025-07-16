@@ -1,3 +1,5 @@
+
+
 export default function ComicCard({ thumb, title }) {
   return (
     <div className="">
