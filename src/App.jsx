@@ -8,6 +8,7 @@ import Main from "./components/Main"
 import Footer from './components/Footer'
 import comics from "./assets/ComicCardHeader";
 import navbar from './assets/navbarHeader';
+import linkHeader from './assets/linkHeader';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
     <>
       <Header navbar={navbar}/>
      
-      <Main comics={comics}  />
+      <Main comics={comics} linkHeader={linkHeader}  />
      
       <Footer />
 
