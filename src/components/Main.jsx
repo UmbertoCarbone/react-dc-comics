@@ -6,6 +6,7 @@ import foto3 from "/img/buy-comics-subscriptions.png"
 import foto4 from "/img/buy-comics-shop-locator.png"
 import foto5 from "/img/buy-dc-power-visa.svg"
 import jumbotron from "/img/jumbotron.jpg"
+import ComicCard from "./ComicCard";
 
 
 const list = [
@@ -47,10 +48,7 @@ export default function Main() {
                     <div className="row">
                         {comics.map((comic) => (
                             <div className="col-12 col-sm-4 col-lg-2" key={comic.id}>
-                                <div className="">
-                                    <img src={comic.thumb} className="img" />
-                                    <p className="text-center mt-3">{comic.title}</p>
-                                </div>
+                                <ComicCard thumb={comic.thumb} title={comic.title} />
                             </div>
                         ))}
                     </div>
@@ -63,14 +61,12 @@ export default function Main() {
                         {item.title}
                     </div>
                 ))}
-                {/* <a href="#"><img src={foto1} alt="Digital Comics" />DIGITAL COMICS</a>
-                <a href="#"><img src={foto2} alt="DC Merchandise" />DC Merchandise</a>
-                <a href="#"> <img src={foto3} alt="Subscription" />Subscription</a>
-                <a href="#"> <img src={foto4} alt="Shop Locator" />Shop Locator</a>
-                <a href="#"> <img src={foto5} alt="Power Visa" />Power Visa</a> */}
+
             </div>
         </main>
 
     )
 }
+
+
 
